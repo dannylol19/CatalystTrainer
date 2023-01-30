@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;CATALYSTTRAINER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;CATALYSTTRAINER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -144,7 +144,100 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="src\memory\memory.cpp" />
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\Trainer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\catalyst-sdk\Array.h" />
+    <ClInclude Include="src\catalyst-sdk\Asset.h" />
+    <ClInclude Include="src\catalyst-sdk\BaseSkeletonAsset.h" />
+    <ClInclude Include="src\catalyst-sdk\BoundingBoxData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPhysicsBody.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPhysicsBodyData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPhysicsData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPoseCollisionType.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPoseData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterPoseType.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterSoundData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterSprintData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterStateData.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterStatePoseInfo.h" />
+    <ClInclude Include="src\catalyst-sdk\CharacterStateType.h" />
+    <ClInclude Include="src\catalyst-sdk\ComponentEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\ControllableEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\DataBusPeer.h" />
+    <ClInclude Include="src\catalyst-sdk\DataContainer.h" />
+    <ClInclude Include="src\catalyst-sdk\Entity.h" />
+    <ClInclude Include="src\catalyst-sdk\EntityBusPeer.h" />
+    <ClInclude Include="src\catalyst-sdk\EntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\EntityVoiceOverInfo.h" />
+    <ClInclude Include="src\catalyst-sdk\FaithDamageType.h" />
+    <ClInclude Include="src\catalyst-sdk\FaithMove.h" />
+    <ClInclude Include="src\catalyst-sdk\FloatPhysicsData.h" />
+    <ClInclude Include="src\catalyst-sdk\GameComponentEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\GameDataContainer.h" />
+    <ClInclude Include="src\catalyst-sdk\GameObjectData.h" />
+    <ClInclude Include="src\catalyst-sdk\GamePhysicsEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\Guid.h" />
+    <ClInclude Include="src\catalyst-sdk\HavokAsset.h" />
+    <ClInclude Include="src\catalyst-sdk\LinearTransform.h" />
+    <ClInclude Include="src\catalyst-sdk\LocalPlayerId.h" />
+    <ClInclude Include="src\catalyst-sdk\LocalPlayerViewId.h" />
+    <ClInclude Include="src\catalyst-sdk\LookConstraintsData.h" />
+    <ClInclude Include="src\catalyst-sdk\MaterialDecl.h" />
+    <ClInclude Include="src\catalyst-sdk\PamCharacterEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\PersonViewMode.h" />
+    <ClInclude Include="src\catalyst-sdk\PhysicsBody.h" />
+    <ClInclude Include="src\catalyst-sdk\PhysicsBodyData.h" />
+    <ClInclude Include="src\catalyst-sdk\PhysicsConstraintData.h" />
+    <ClInclude Include="src\catalyst-sdk\PhysicsConstraintInitialStanceData.h" />
+    <ClInclude Include="src\catalyst-sdk\PhysicsEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\PlayerSpawnType.h" />
+    <ClInclude Include="src\catalyst-sdk\PlayerViewData.h" />
+    <ClInclude Include="src\catalyst-sdk\PlayerViewDefinition.h" />
+    <ClInclude Include="src\catalyst-sdk\PoseTransitionTime.h" />
+    <ClInclude Include="src\catalyst-sdk\ProximityData.h" />
+    <ClInclude Include="src\catalyst-sdk\ProximityObjectType.h" />
+    <ClInclude Include="src\catalyst-sdk\QualityScalableFloat.h" />
+    <ClInclude Include="src\catalyst-sdk\Realm.h" />
+    <ClInclude Include="src\catalyst-sdk\ResourceRef.h" />
+    <ClInclude Include="src\catalyst-sdk\RigidBodyCollisionLayer.h" />
+    <ClInclude Include="src\catalyst-sdk\RigidBodyData.h" />
+    <ClInclude Include="src\catalyst-sdk\RigidBodyMotionType.h" />
+    <ClInclude Include="src\catalyst-sdk\RigidBodyQualityType.h" />
+    <ClInclude Include="src\catalyst-sdk\RigidBodyType.h" />
+    <ClInclude Include="src\catalyst-sdk\SkeletonAsset.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundAsset.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataAsset.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataChunk.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataPolicy.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataReadTarget.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataReference.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataReleaseBehavior.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundDataRequestBehavior.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundScopeData.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundScopeStageData.h" />
+    <ClInclude Include="src\catalyst-sdk\SoundScopeStrategyData.h" />
+    <ClInclude Include="src\catalyst-sdk\SpatialEntityData.h" />
+    <ClInclude Include="src\catalyst-sdk\SpeedModifierData.h" />
+    <ClInclude Include="src\catalyst-sdk\SubViewData.h" />
+    <ClInclude Include="src\catalyst-sdk\TeamId.h" />
+    <ClInclude Include="src\catalyst-sdk\Vec2.h" />
+    <ClInclude Include="src\catalyst-sdk\Vec3.h" />
+    <ClInclude Include="src\catalyst-sdk\ViewDefinition.h" />
+    <ClInclude Include="src\catalyst-sdk\ViewDefinitionType.h" />
+    <ClInclude Include="src\catalyst-sdk\VoiceOverLabel.h" />
+    <ClInclude Include="src\catalyst-sdk\VoiceOverNamedValue.h" />
+    <ClInclude Include="src\catalyst-sdk\VoiceOverObject.h" />
+    <ClInclude Include="src\catalyst-sdk\VoiceOverValue.h" />
+    <ClInclude Include="src\catalyst-sdk\VoiceOverValueType.h" />
+    <ClInclude Include="src\generic\Pointer.h" />
+    <ClInclude Include="src\generic\Vector.h" />
+    <ClInclude Include="src\memory\memory.h" />
+    <ClInclude Include="src\memory\offsets.h" />
+    <ClInclude Include="src\Trainer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
