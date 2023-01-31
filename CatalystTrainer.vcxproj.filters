@@ -308,5 +308,8 @@
     <ClInclude Include="src\trainer\vars.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="minhook\MinHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
