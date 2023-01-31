@@ -3,6 +3,3 @@
 #include "memory/pointers.h"
 
 Trainer::Trainer() {}
-
-// godmode
-// memory::write(pointers::player::health, 7);
