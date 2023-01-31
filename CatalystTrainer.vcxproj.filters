@@ -24,12 +24,15 @@
     <ClCompile Include="src\memory\memory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\trainer\features.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Trainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\memory\offsets.h">
+    <ClInclude Include="src\memory\pointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\memory\memory.h">
@@ -291,6 +294,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\generic\Pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enums\GameAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enums\MovementState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trainer\features.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trainer\vars.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

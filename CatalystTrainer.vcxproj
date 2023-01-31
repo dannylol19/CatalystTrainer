@@ -147,6 +147,7 @@
     <ClCompile Include="src\memory\memory.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\Trainer.cpp" />
+    <ClCompile Include="src\trainer\features.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\catalyst-sdk\Array.h" />
@@ -233,11 +234,15 @@
     <ClInclude Include="src\catalyst-sdk\VoiceOverObject.h" />
     <ClInclude Include="src\catalyst-sdk\VoiceOverValue.h" />
     <ClInclude Include="src\catalyst-sdk\VoiceOverValueType.h" />
+    <ClInclude Include="src\enums\GameAction.h" />
+    <ClInclude Include="src\enums\MovementState.h" />
     <ClInclude Include="src\generic\Pointer.h" />
     <ClInclude Include="src\generic\Vector.h" />
     <ClInclude Include="src\memory\memory.h" />
-    <ClInclude Include="src\memory\offsets.h" />
+    <ClInclude Include="src\memory\pointers.h" />
     <ClInclude Include="src\Trainer.h" />
+    <ClInclude Include="src\trainer\features.h" />
+    <ClInclude Include="src\trainer\vars.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
