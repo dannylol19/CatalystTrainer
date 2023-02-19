@@ -21,7 +21,7 @@ int __stdcall DllMain(HMODULE hmodule, DWORD reason, LPVOID reserved) {
 
 	hooks::restore_hooks();
   }
-  catch (std::exception e) {
+  catch (const std::exception& e) {
 	error::msg_box(e.what(), error::MsgBoxType::Error);
   }
 
