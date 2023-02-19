@@ -13,8 +13,7 @@ namespace memory {
 
   template<typename Type>
   void write(Pointer<Type>& ptr, Type value) {
-    Type* raw = deref(ptr);
-    *raw = value;
+    *deref(ptr) = value;
   }
 
   template<typename Type>
